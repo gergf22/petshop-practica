@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Petshop</title>
   </head>
   <body>
     <header>
-      <section>
+      <section class="header-container-top">
         <p>Grandes ofertas en comederos</p>
         <select name="idioma">
           <option value="espaniol">Español</option>
@@ -15,53 +16,69 @@
           <option value="arg">ARG$</option>
         </select>
       </section>
-      <nav>
-        <img src="img/Logo (1).png" alt="front cat and dog logo" />
-        <ul>
-          <li>Categorías</li>
-          <li>Pets</li>
-          <li>Nosotros</li>
-          <li>Contactanos</li>
-        </ul>
-      </nav>
+      <section class="header-container-bottom">
+        <nav>
+          <p class="logo-base">
+            <img src="img/Cat.png" alt="gato" />
+            <span class="logo-first">Front</span>
+            Cat&Dog
+            <img src="img/Dog.png" alt="perro" />
+          </p>
+          <ul class="nav-links">
+            <li>
+              <img src="img/pawprint 1.png" alt="" /><span>Categorías</span>
+            </li>
+            <li><img src="img/pawprint 1.png" alt="" /><span>Pets</span></li>
+            <li>
+              <img src="img/pawprint 1.png" alt="" /><span>Nosotros</span>
+            </li>
+            <li>
+              <img src="img/pawprint 1.png" alt="" /><span>Contactanos</span>
+            </li>
+        </nav>
+      </section>
     </header>
     <main>
-        <section class="banner">
-            <img src="img/bowl-and-pet-daities-on-green-background 1.png" alt="bowl de comida y juguetes para perros">
-            <h2>¡Es un placer tenerte aquí!</h2>
-            <h4>¡Comederos en descuento!</h4>
-            <button>COMEDEROS</button>
-        </section>
-        <section class="productos">
-            <h1>Productos Destacados</h1>
-            <ul>
-                <li>Comederos</li>
-                <li>Accesorios</li>
-                <li>Comida</li>
-            </ul>
+      <section class="banner">
+        <h2>¡Es un placer tenerte aquí!</h2>
+        <!-- <img
+          src="img/bowl-and-pet-daities-on-green-background 1.png"
+          alt="bowl de comida y juguetes para perros"
+        /> -->
+        
+        <h4>¡Comederos en descuento!</h4>
+        <button>COMEDEROS</button>
+      </section>
+      <section class="productos">
+        <h1>Productos Destacados</h1>
+        <ul>
+          <li>Comederos</li>
+          <li>Accesorios</li>
+          <li>Comida</li>
+        </ul>
 
-            <article>
-                <img src="img/churrasquito.png" alt="churrasquito">
-                <p>Juguete Churrasquito</p>
-                <p>$150</p>
-            </article>
-            <article>
-                <img src="img/comedero.png" alt="comedero">
-                <p>Comedero para perro</p>
-                <p>$250</p>
-            </article>
-            <article>
-                <img src="img/Huesito.png" alt="Huesito">
-                <p>Juguete Huesito</p>
-                <p>$650</p>
-            </article>
-        </section>
-        <section>
-
-        </section>
+        <article>
+          <img src="img/churrasquito.png" alt="churrasquito" />
+          <p>Juguete Churrasquito</p>
+          <p>$150</p>
+        </article>
+        <article>
+          <img src="img/comedero.png" alt="comedero" />
+          <p>Comedero para perro</p>
+          <p>$250</p>
+        </article>
+        <article>
+          <img src="img/Huesito.png" alt="Huesito" />
+          <p>Juguete Huesito</p>
+          <p>$650</p>
+        </article>
+      </section>
+      <section></section>
     </main>
     <footer>
-        <p style="text-align: center; color: white; background-color: black;">Todos los derechos reservados Front End</p>
+      <p style="text-align: center; color: white; background-color: black">
+        Todos los derechos reservados Front End
+      </p>
     </footer>
   </body>
 </html>
