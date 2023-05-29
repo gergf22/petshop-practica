@@ -47,3 +47,51 @@
     text-align: center;
 
 }
+
+.banner button {
+  background: #F0A83E;
+  border-style: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  height: 49px;
+  width: 141px;
+}
+
+.productos li{
+  display: inline;
+  margin-right: 5px;
+  color: #666666;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.productos .precio {
+  color: #F0A83E;
+  
+}
+
+.footer-top {
+  background: #3C2313;
+  color: #8A8787;
+}
+
+.footer-top h3{
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+footer .logo-base {
+  color: #F0A83E;
+}
+
+footer .logo-first{
+  color: white;
+}
+
+.derechos p {
+  text-align: center;
+  color: white;
+  background-color: #222222;
+}
