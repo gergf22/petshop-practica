@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 
 * {
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,15 +10,29 @@
 .header-container-top {
   background-color: #222222;
   color: #f3f3f3;
+  display: flex;
   font-weight: 400;
+  justify-content: space-between;
+  padding: 5px 30px;
 }
 
-.header-lista {
-  list-style: none;
+header select{
+  background-color: #222222;
+  color: #f3f3f3;
+  border: none;
 }
+
+/* .header-lista {
+  list-style: none;
+} */
 
 .header-container-bottom {
+  align-items: center;
   background-color: #f0a83e;
+  display: flex;
+  height: 8vh;
+  justify-content: space-between;
+  padding: 0px 30px;
 }
 
 .logo-base {
@@ -33,19 +47,52 @@
 }
 
 .nav-links {
-  list-style: none;
+
   color: #ffffff;
-  font-weight: 400;
+  display: flex;
   font-size: 13px;
+  font-weight: 400;
+  width: 25%;
+}
+
+.nav-links ul{
+  display: flex;
+  width: 100%;
+  list-style: none;
+  justify-content: space-around;
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
 }
 
 .banner{
-    background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 409px;
-    text-align: center;
+  align-items: center;
+  align-content: flex-end;
+  background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #3C2313;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-weight: 400;
+  justify-content: center;
+  height: 60vh;
+  padding-right: 10vw;
+  text-align: center;
+}
 
+.banner h2 {
+  background-color: white;
+  letter-spacing: 2px;
+  padding: 10px;
+}
+
+.banner h4{
+  margin: 15px 0;
 }
 
 .banner button {
@@ -56,6 +103,24 @@
   font-weight: 400;
   height: 49px;
   width: 141px;
+}
+
+.productos{
+  display: flex;
+  flex-direction: column;
+}
+
+.productos-especiales{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 26vh;
+  justify-content: space-evenly;
+}
+
+.productos-especiales h1{
+  color: #3C2313;
+  font-size: 55px;
 }
 
 .productos li{
@@ -71,12 +136,12 @@
   
 }
 
-.footer-top {
+.footer-main {
   background: #3C2313;
   color: #8A8787;
 }
 
-.footer-top h3{
+.footer-main h3{
   color: white;
   font-size: 20px;
   font-weight: 700;

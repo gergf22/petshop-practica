@@ -2,41 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Petshop</title>
   </head>
   <body>
     <header>
       <section class="header-container-top">
-        <p>Grandes ofertas en comederos</p>
-        <select name="idioma">
-          <option value="espaniol">Español</option>
-        </select>
-        <select name="moneda">
-          <option value="arg">ARG$</option>
-        </select>
+        <div>
+          <p>Grandes ofertas en comederos</p>
+        </div>
+        <div>
+          <select name="idioma">
+            <option value="espaniol">Español</option>
+          </select>
+          <select name="moneda">
+            <option value="arg">ARG$</option>
+          </select>
+        </div>
       </section>
-      <section class="header-container-bottom">
-        <nav>
+      <nav class="header-container-bottom">
+        <div>
           <p class="logo-base">
             <img src="img/Cat.png" alt="gato" />
             <span class="logo-first">Front</span>
             Cat&Dog
             <img src="img/Dog.png" alt="perro" />
           </p>
-          <ul class="nav-links">
+        </div>
+        <div class="nav-links">
+          <ul>
             <li>
               <img src="img/pawprint 1.png" alt="" /><span>Categorías</span>
             </li>
-            <li><img src="img/pawprint 1.png" alt="" /><span>Pets</span></li>
+            <li>
+              <img src="img/pawprint 1.png" alt="" /><span>Pets</span>
+            </li>
             <li>
               <img src="img/pawprint 1.png" alt="" /><span>Nosotros</span>
             </li>
             <li>
               <img src="img/pawprint 1.png" alt="" /><span>Contactanos</span>
             </li>
-        </nav>
-      </section>
+          </ul>            
+        </div>
+      </nav>
     </header>
     <main>
       <section class="banner">
@@ -45,56 +55,73 @@
         <button>COMEDEROS</button>
       </section>
       <section class="productos">
-        <h1>Productos Destacados</h1>
-        <ul>
-          <li>Comederos</li>
-          <li>-</li>
-          <li>Accesorios</li>
-          <li>-</li>
-          <li>Comida</li>
-        </ul>
-
-        <article>
-          <img src="img/churrasquito.png" alt="churrasquito" />
-          <p>Juguete Churrasquito</p>
-          <p class="precio">$150</p>
-        </article>
-        <article>
-          <img src="img/comedero.png" alt="comedero" />
-          <p>Comedero para perro</p>
-          <p class="precio">$250</p>
-        </article>
-        <article>
-          <img src="img/Huesito.png" alt="Huesito" />
-          <p>Juguete Huesito</p>
-          <p class="precio">$650</p>
-        </article>
+        <div class="productos-especiales">
+          <div>
+            <img src="img/pawprint 2.png" alt="">
+          </div>
+          <div>
+            <h1>Productos Destacados</h1>
+          </div>
+          <div>
+            <ul>
+              <li>Comederos</li>
+              <li>-</li>
+              <li>Accesorios</li>
+              <li>-</li>
+              <li>Comida</li>
+            </ul>
+          </div>
+        </div>
+        <div class="productos-lista">
+          <article>
+            <img src="img/churrasquito.png" alt="churrasquito" />
+            <p>Juguete Churrasquito</p>
+            <p class="precio">$150</p>
+          </article>
+          <article>
+            <img src="img/comedero.png" alt="comedero" />
+            <p>Comedero para perro</p>
+            <p class="precio">$250</p>
+          </article>
+          <article>
+            <img src="img/Huesito.png" alt="Huesito" />
+            <p>Juguete Huesito</p>
+            <p class="precio">$650</p>
+          </article>          
+        </div>
       </section>
       <section></section>
     </main>
     <footer>
-      <section class="footer-top">
-        <ul>
-          <li><img src="img/Icono-map.png" alt="mapa"></li>
-          <li><h3>Localidad</h3></li>
-          <li>Calle - provincia</li>
-        </ul>
-        <ul>
-          <li><img src="img/Icono (tel).png" alt="telefono"></li>
-          <li><h3>Teléfono</h3></li>
-          <li>Número de teléfono</li>
-        </ul>
-        <ul>
-          <li><img src="img/Icono (Correo).png" alt=""></li>
-          <li><h3>Correo Electrónico</h3></li>
-          <li>Dirección de correo</li>
-        </ul>
-        <p class="logo-base">
-          <img src="img/Cat.png" alt="gato" />
-          <span class="logo-first">Front</span>
-          Cat&Dog
-          <img src="img/Dog.png" alt="perro" />
-        </p>
+      <section class="Footer-top">
+
+      </section>
+      <section class="footer-main">
+        <div>
+          <ul>
+            <li><img src="img/Icono-map.png" alt="mapa"></li>
+            <li><h3>Localidad</h3></li>
+            <li>Calle - provincia</li>
+          </ul>
+          <ul>
+            <li><img src="img/Icono (tel).png" alt="telefono"></li>
+            <li><h3>Teléfono</h3></li>
+            <li>Número de teléfono</li>
+          </ul>
+          <ul>
+            <li><img src="img/Icono (Correo).png" alt=""></li>
+            <li><h3>Correo Electrónico</h3></li>
+            <li>Dirección de correo</li>
+          </ul>
+        </div>
+        <div>
+          <p class="logo-base">
+            <img src="img/Cat.png" alt="gato" />
+            <span class="logo-first">Front</span>
+            Cat&Dog
+            <img src="img/Dog.png" alt="perro" />
+          </p>
+        </div>
       </section>
       <section class="derechos">
         <p>
