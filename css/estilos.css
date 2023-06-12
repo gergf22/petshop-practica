@@ -2,10 +2,16 @@
 
 * {
   font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
+/*   margin: 0;
+  padding: 0; */
   box-sizing: border-box;
 }
+
+body{
+  margin: 0;
+  padding: 0;
+}
+/* Header */
 
 .header-container-top {
   background-color: #222222;
@@ -21,10 +27,6 @@ header select {
   color: #f3f3f3;
   border: none;
 }
-
-/* .header-lista {
-  list-style: none;
-} */
 
 .header-container-bottom {
   align-items: center;
@@ -64,6 +66,12 @@ header select {
   list-style: none;
   justify-content: space-around;
 }
+
+ul{
+  padding: 0;
+}
+
+/* Main */
 
 main {
   display: flex;
@@ -116,7 +124,6 @@ main {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 26vh;
   justify-content: space-evenly;
 }
 
@@ -153,6 +160,8 @@ main {
 .precio {
   color: #f0a83e;
 }
+
+/* Footer */
 
 .footer-top{
   background-color: #F0A83E;
@@ -199,30 +208,32 @@ main {
   padding: 30px;
 }
 
-.contacto div {
+.contacto{
   display: flex;
-  justify-content: space-around;
-  margin: 20px 0;
-  width: 25vw;
+  flex-direction: column;
+  
 }
 
-.contacto img {
-  width: 5vw;
+.contacto div {
+  display: flex;
+  margin: 20px 0;
 }
+
 .contacto ul{
   list-style: none;
-  width: 15vw;
+  margin-left: 10px;
+  margin-top: 0;
 }
 
 .contacto h3 {
   color: white;
   font-size: 30px;
   font-weight: 700;
+  margin: 0;
 }
 
 .logo{
   align-self: center;
-  width: 20vw;
 }
 
 footer .logo-base {
@@ -237,4 +248,64 @@ footer .logo-first {
   text-align: center;
   color: white;
   background-color: #222222;
+}
+
+br, .menu {
+  display: none;
+}
+
+/*  Mobile */
+
+@media screen and (max-width:480px) {
+  .logo-base{
+    font-size: 20px;
+  }
+
+  .logo-base img {
+    width: 20px;
+  }
+
+  .nav-links{
+    display: none;
+  }
+  
+  .banner {
+    align-items: flex-end;
+    padding-right: 3vw;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+  br, .menu{
+    display: block;
+  }
+
+  .productos-lista{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productos-lista article{
+    width: 90%
+  }
+
+  .footer-top{
+    flex-direction: column;
+  }
+
+  .novedades, .suscribirme{
+    justify-content: space-evenly;
+    width: 95vw;
+  }
+
+  .footer-main{
+    flex-direction: column-reverse;
+  }
+
+  .contacto {
+    align-self: flex-end;
+  }
+
 }
