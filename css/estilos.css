@@ -245,6 +245,7 @@ footer .logo-first {
 }
 
 .derechos p {
+  margin: 0;
   text-align: center;
   color: white;
   background-color: #222222;
